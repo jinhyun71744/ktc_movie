@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 검색 사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <title>영화 검색</title>
+        <h1 id="siteTitle">🎬 My Movie Finder</h1>
+        <input type="text" id="searchInput" placeholder="영화 제목을 입력하세요.">
+        <button id="searchBtn">검색</button>
+    </header>
+    <main>
+        <div id="reSearch" class="hidden">
+            <input type="text" id="reSearchInput">
+            <button id="reSearchBtn">결과 내 재검색</button>
+        </div>
+        <p id="errorMessage" class="hidden"></p>
+
+        <section id="movieList"></section>
+    </main>
+    <div id="modal" class="hidden">
+        <div class="modalContent">
+            <span id="modalClose">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Movie Finder. Powered by TMDB API.</p>
+    </footer>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
